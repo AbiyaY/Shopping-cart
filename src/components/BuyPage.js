@@ -4,7 +4,6 @@ import axios from 'axios';
 import {random, commerce ,lorem} from 'faker';
 import {Container,Col,Row,Button } from 'reactstrap';
 import CardSection from './CardSection';
-import NavBar from './NavBar';
 
 
 const apiKey = "563492ad6f91700001000001b85afa4af63b41afa431d0ba883cb0f4";
@@ -48,8 +47,9 @@ const BuyPage = ({addToCart,cartItem}) => {
 return(
 
     <Container fluid>
-        <NavBar />
-        <Button className= "button">Go To Cart ({cartItem.length}) </Button>
+       
+        <Button href="#">Link</Button>
+        <Button className= "button" >Go To Cart ({cartItem.length}) </Button>
         <Row>
             {product.map(product =>(
                 <Col md={4} key={product.id}>
@@ -64,3 +64,37 @@ return(
 };
 
 export default BuyPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
